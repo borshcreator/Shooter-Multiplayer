@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 1483338119}
   - component: {fileID: 1483338118}
   - component: {fileID: 1483338117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _colyseusSettings: {fileID: 11400000, guid: b53dc19adf22ba146927ab6f494e503b, type: 2}
-  _player: {fileID: 5910989413421600631, guid: 56e52782f63e2c94697248657637f846, type: 3}
+  _player: {fileID: 5910989413421600628, guid: 56e52782f63e2c94697248657637f846, type: 3}
   _enemy: {fileID: -7894224093152319302, guid: d47f00385b3335f42aeff03fab9241ae, type: 3}
 --- !u!4 &1776064587
 Transform:
