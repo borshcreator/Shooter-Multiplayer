@@ -5,10 +5,12 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private float _lifeTime = 5f;
     [SerializeField] private Rigidbody _rigidbody;
+    private int _damage;
 
-   public void Init(Vector3 velocity)
+   public void Init(Vector3 velocity, int damage = 0)
     {
         _rigidbody.velocity = velocity;
+        _damage = damage;
         StartCoroutine(DestroyRoutine());
     }
 
@@ -19,6 +21,11 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.collider.TryGetComponent(out EnemeyCharacter enemy))
+        {
+            enemy.ApplyDamage(_damage);
+        }
+
         Destroy();
     }
 
